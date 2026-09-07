@@ -1,0 +1,138 @@
+{
+  "slug": "home",
+  "metaTitle": "Santosh Group of Institutions | Est. 1977 | Bangarpet & Bangalore",
+  "metaDescription": "Discover 34+ years of academic excellence from Pre-Primary to Graduation across 11 institutions in Bangarpet and Bangalore.",
+  "hero": {
+    "eyebrow": "WELCOME TO SANTOSH GROUP OF INSTITUTIONS",
+    "tagline": "Let's Imagine A New World",
+    "leadText": "Rooted in foundational values since 1977, guiding learners from pre-primary exploration to graduation excellence with an enduring balance of urban-rural perspective.",
+    "primaryCta": {
+      "text": "Explore Our Institutions",
+      "url": "/institutions"
+    },
+    "secondaryCta": {
+      "text": "Admissions & Procedure",
+      "url": "/admissions"
+    }
+  },
+  "stats": [
+    {
+      "value": "34+",
+      "label": "Years of Academic Heritage"
+    },
+    {
+      "value": "11",
+      "label": "Schools & Colleges"
+    },
+    {
+      "value": "1977",
+      "label": "Year Established"
+    },
+    {
+      "value": "100%",
+      "label": "Dedicated Mentorship"
+    }
+  ],
+  "aboutCallout": {
+    "eyebrow": "ABOUT SGI",
+    "title": "Unleash students possibilities with us",
+    "description": "Unleashing every student's potential by offering a stimulating and supportive environment is what we offer. Our innovative education encourages students to explore, question, and achieve big in a changing global landscape.",
+    "learnMoreUrl": "/about"
+  },
+  "programsPreview": {
+    "eyebrow": "PROGRAMS",
+    "title": "Explore Our Academic Pathways",
+    "items": [
+      {
+        "id": "bbm",
+        "name": "Bachelor of Business Management (BBM)",
+        "level": "Undergraduate",
+        "desc": "Affiliated to Bangalore University. Specializations in Marketing, HRM, and Finance with entrepreneurship incubation.",
+        "url": "/institutions/santosh-degree-college"
+      },
+      {
+        "id": "bca",
+        "name": "Bachelor of Computer Applications (BCA)",
+        "level": "Undergraduate",
+        "desc": "Cutting-edge software development, systems analysis, and hands-on computer lab training for IT careers.",
+        "url": "/institutions/santosh-degree-college"
+      },
+      {
+        "id": "bcom",
+        "name": "Bachelor of Commerce (B.Com)",
+        "level": "Undergraduate",
+        "desc": "Rigorous accounting, financial analysis, corporate taxation, and information systems management.",
+        "url": "/institutions/santosh-degree-college"
+      },
+      {
+        "id": "ba",
+        "name": "Bachelor of Arts (BA)",
+        "level": "Undergraduate",
+        "desc": "Comprehensive grounding in History, Economics, Political Science, and Sociology.",
+        "url": "/institutions/santosh-degree-college"
+      },
+      {
+        "id": "ded",
+        "name": "Diploma in Education (D.Ed)",
+        "level": "Teacher Training",
+        "desc": "2-year professional training recognized by NCTE & Govt of Karnataka with 18 district distinctions.",
+        "url": "/institutions/santosh-ded-college"
+      },
+      {
+        "id": "puc",
+        "name": "Pre-University (PUC Science, Commerce & Arts)",
+        "level": "Pre-University",
+        "desc": "Fathima PU College offering PCMB, PCMC, PCME, HECA, EABC, and HEPS with 90%+ pass rates.",
+        "url": "/institutions/fathima-pu-college"
+      }
+    ]
+  },
+  "floatingTooltip": {
+    "title": "18 Distinctions in D.Ed",
+    "subtitle": "Kolar District Topper & Consistent University Ranks"
+  },
+  "whySgi": {
+    "eyebrow": "WHY SANTOSH GROUP",
+    "title": "A Foundation Built for Life",
+    "features": [
+      {
+        "title": "Academic Excellence",
+        "description": "Uncompromising standards from pre-primary fundamentals through university degrees, delivering consistent district distinctions."
+      },
+      {
+        "title": "Experienced Faculty",
+        "description": "Eminent, qualified subject specialists who act as mentors and facilitators, fostering critical inquiry and personalized attention."
+      },
+      {
+        "title": "Supportive Community",
+        "description": "Balanced urban-rural atmosphere with spacious playgrounds, active NSS camps, separate hostels, and dedicated bus fleets."
+      }
+    ]
+  },
+  "highlights": [
+    {
+      "title": "18 Distinctions Secured in D.Ed",
+      "date": "Annual Milestone",
+      "location": "Kolar District Topper",
+      "desc": "Our D.Ed students secured 18 distinctions with the highest marks in the district, demonstrating peerless pedagogical training.",
+      "url": "/institutions/santosh-ded-college",
+      "image": "/images/ded-teachers.jpg"
+    },
+    {
+      "title": "State Recognition & Campus Milestones",
+      "date": "Institutional Milestone",
+      "location": "Bangarpet Main Campus",
+      "desc": "Regular inspection and recognition by educational authorities commending SGI for academic leadership across Kolar district.",
+      "url": "/gallery",
+      "image": "/images/campus-main-entrance.jpg"
+    },
+    {
+      "title": "Taluk & District Level Sports Championships",
+      "date": "Athletics Win",
+      "location": "Inter-Collegiate Meets",
+      "desc": "SGI student teams clinched consecutive podium finishes in volleyball, track-and-field, and annual NSS community events.",
+      "url": "/student-life",
+      "image": "/images/sports-volleyball.jpg"
+    }
+  ]
+}

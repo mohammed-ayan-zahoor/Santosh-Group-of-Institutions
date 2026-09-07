@@ -1,0 +1,84 @@
+{
+  "slug": "contact",
+  "metaTitle": "Contact Us | Santosh Group of Institutions",
+  "metaDescription": "Get in touch with Santosh Group of Institutions. Campus address, phone numbers, email, and campus directory.",
+  "headOffice": {
+    "name": "Santosh Group of Institutions (Central Office)",
+    "address": "No. 1169, Kolar Road (Near Canara Bank), Bangarpet \u2013 563 114, Kolar District, Karnataka",
+    "phones": [
+      "09448106902",
+      "09886152151"
+    ],
+    "email": "santoshgroupofinstitutions@gmail.com",
+    "dedEmail": "santoshdedcollege@gmail.com",
+    "hours": "Monday \u2013 Saturday: 9:00 AM \u2013 5:00 PM (Closed on Sundays)"
+  },
+  "institutionsList": [
+    {
+      "name": "Santosh Nursery School",
+      "location": "Bangarpet",
+      "level": "Pre-Primary",
+      "phone": "09448106902"
+    },
+    {
+      "name": "Santosh Primary School",
+      "location": "Bangarpet",
+      "level": "Primary",
+      "phone": "09448106902"
+    },
+    {
+      "name": "Santosh Higher Primary School",
+      "location": "Bangarpet",
+      "level": "Middle School",
+      "phone": "09448106902"
+    },
+    {
+      "name": "Santosh High School",
+      "location": "Bangarpet",
+      "level": "Secondary",
+      "phone": "09448106902"
+    },
+    {
+      "name": "Fathima PU College",
+      "location": "Bangarpet",
+      "level": "Pre-University (Arts, Commerce, Science)",
+      "phone": "09448106902"
+    },
+    {
+      "name": "Santosh Degree College",
+      "location": "Bangarpet",
+      "level": "Graduation (BBM, BCA, B.Com, BA)",
+      "phone": "09448106902"
+    },
+    {
+      "name": "Santosh D.Ed (T.C.H) College",
+      "location": "Bangarpet",
+      "level": "Teacher Training Diploma",
+      "phone": "09886152151"
+    },
+    {
+      "name": "Santosh Nursery School",
+      "location": "Bangalore",
+      "level": "Pre-Primary",
+      "phone": "09886152151"
+    },
+    {
+      "name": "Santosh Primary School",
+      "location": "Bangalore",
+      "level": "Primary",
+      "phone": "09886152151"
+    },
+    {
+      "name": "Santosh Higher Primary School",
+      "location": "Bangalore",
+      "level": "Middle School",
+      "phone": "09886152151"
+    },
+    {
+      "name": "Santosh High School",
+      "location": "Bangalore",
+      "level": "Secondary",
+      "phone": "09886152151"
+    }
+  ]
+}

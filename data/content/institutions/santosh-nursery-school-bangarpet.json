@@ -1,0 +1,37 @@
+{
+  "slug": "santosh-nursery-school-bangarpet",
+  "name": "Santosh Nursery School",
+  "location": "Bangarpet",
+  "campus": "Kolar Road, Bangarpet",
+  "level": "Pre-Primary Education",
+  "template": "school",
+  "tagline": "Nurturing early curiosity and emotional confidence",
+  "description": "Santosh Nursery School offers toddlers a gentle, joyful introduction to formal learning. Rooted in Dr. Abdul Sattar's belief that early experiences shape lifetime personality, our early childhood educators focus on language acquisition, motor skill coordination, and social empathy in a secure environment.",
+  "highlights": [
+    "Safe and joyful play rooms",
+    "Foundational phonics and numeracy kits",
+    "Attentive and motherly care staff",
+    "Individualized developmental focus"
+  ],
+  "phone": "09448106902",
+  "email": "santoshgroupofinstitutions@gmail.com",
+  "image": "/images/students-walking.jpg",
+  "features": [
+    {
+      "title": "Sensory & Activity-Based Exploration",
+      "detail": "Children learn through structured play using educational kits, building blocks, and tactile materials that develop fine motor skills and spatial reasoning naturally."
+    },
+    {
+      "title": "Foundational Literacy & Phonics",
+      "detail": "Early speech clarity, rhyming, storytelling, and phonics introduce English and regional vocabulary without pressure or rote memorization."
+    },
+    {
+      "title": "Attentive Maternal Care",
+      "detail": "Small class sizes allow our dedicated care staff to attend closely to each child's emotional comfort, hygiene, and daily social habits."
+    },
+    {
+      "title": "Parent Communication & Trust",
+      "detail": "Regular monthly parent interactions keep families actively aligned with their child's behavioral growth and developmental milestones."
+    }
+  ]
+}

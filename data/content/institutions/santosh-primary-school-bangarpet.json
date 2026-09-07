@@ -1,0 +1,37 @@
+{
+  "slug": "santosh-primary-school-bangarpet",
+  "name": "Santosh Primary School",
+  "location": "Bangarpet",
+  "campus": "Kolar Road, Bangarpet",
+  "level": "Primary Education (Grades 1\u20134)",
+  "template": "school",
+  "tagline": "Building strong conceptual foundations in literacy and numeracy",
+  "description": "At the primary level, learning transitions from play to structured intellectual inquiry. Students build communicative fluency in English and Kannada, master mathematical foundations, and study environmental sciences through direct observation.",
+  "highlights": [
+    "Child-centric activity based learning",
+    "Spacious and ventilated classrooms",
+    "Moral science and value education",
+    "Regular field trips and outdoor recreation"
+  ],
+  "phone": "09448106902",
+  "email": "santoshgroupofinstitutions@gmail.com",
+  "image": "/images/classroom-students.jpg",
+  "features": [
+    {
+      "title": "Inquiry-Led Classroom Learning",
+      "detail": "Classrooms are airy and naturally lit, designed so teachers facilitate discussion rather than deliver monologue lectures."
+    },
+    {
+      "title": "Concrete Mathematical Thinking",
+      "detail": "Arithmetic is taught using physical aids and practical problem-solving to eliminate math anxiety before it begins."
+    },
+    {
+      "title": "Moral Science & Character Formation",
+      "detail": "Daily assemblies and value-based lessons emphasize honesty, mutual respect, discipline, and reverence for teachers and parents."
+    },
+    {
+      "title": "Outdoor Play & Physical Coordination",
+      "detail": "Dedicated playground sessions every week foster teamwork, sportsmanship, and physical health across student cohorts."
+    }
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "slug": "academics",
+  "metaTitle": "Academic Programs | Santosh Group of Institutions",
+  "metaDescription": "Explore Degree programs (BBM, BCA, BCom, BA), Diploma in Education (D.Ed), Pre-University streams (Science, Commerce, Arts), and School curriculum.",
+  "intro": {
+    "eyebrow": "ACADEMIC EXCELLENCE",
+    "title": "Comprehensive Education from Nursery to Graduation",
+    "lead": "Every program at SGI combines rigorous academic syllabus with experiential learning, industrial exposure, moral grounding, and skill development."
+  },
+  "degrees": [
+    {
+      "code": "BBM",
+      "name": "Bachelor of Business Management",
+      "affiliation": "Bangalore University",
+      "duration": "3 Years (6 Semesters)",
+      "overview": "BBM trains students to acquire managerial skills per industrial requirements through lectures, case studies, role plays, seminars, industrial visits, and entrepreneurship incubation.",
+      "electives": [
+        "Human Resource Management (HRM)",
+        "Marketing Management",
+        "Financial Management"
+      ],
+      "features": "Problem-solving, corporate presentations, managerial aptitude, synchronized business models.",
+      "subjects": [
+        "Business Economics",
+        "Fundamentals of Accounting",
+        "Business Statistics",
+        "Financial Accounting",
+        "Business Environment",
+        "Corporate Accounting",
+        "Services Management",
+        "International Business",
+        "Computer Business Applications",
+        "Indian Constitution",
+        "Entrepreneurial Development"
+      ],
+      "url": "/institutions/santosh-degree-college"
+    },
+    {
+      "code": "BCA",
+      "name": "Bachelor of Computer Applications",
+      "affiliation": "Bangalore University",
+      "duration": "3 Years (6 Semesters)",
+      "overview": "Prepares students for modern IT careers by bridging academic computer science with industry software engineering, multimedia, and systems administration.",
+      "electives": [
+        "Software Engineering & Web Tech",
+        "Database Management Systems",
+        "Computer Graphics & Networks"
+      ],
+      "careers": [
+        "System Analyst",
+        "Programmer",
+        "Project Manager",
+        "Software Quality Tester",
+        "CRM Administrator"
+      ],
+      "url": "/institutions/santosh-degree-college"
+    },
+    {
+      "code": "B.Com",
+      "name": "Bachelor of Commerce",
+      "affiliation": "Bangalore University",
+      "duration": "3 Years (6 Semesters)",
+      "overview": "Covers major areas of finance, banking, business law, statistics, stock brokerage, and corporate taxation. Arranged sequentially so concepts advance in harmony.",
+      "electives": [
+        "Accounting Group",
+        "Information Systems & Management"
+      ],
+      "subjects": [
+        "Financial Accounting",
+        "Business Economics",
+        "Human Resource Management",
+        "Business Statistics",
+        "Corporate Accounting",
+        "International Business Environment",
+        "Indian Constitution",
+        "Entrepreneurship Development",
+        "Business Laws",
+        "Management Accounting"
+      ],
+      "url": "/institutions/santosh-degree-college"
+    },
+    {
+      "code": "BA",
+      "name": "Bachelor of Arts",
+      "affiliation": "Bangalore University",
+      "duration": "3 Years (6 Semesters)",
+      "overview": "Provides critical perspectives in History, Political Science, Economics, and Sociology. Emphasizes theoretical depth and Indian societal context.",
+      "disciplines": [
+        {
+          "subject": "History",
+          "desc": "Critique of historical narratives and discovery of cultural knowledge formation."
+        },
+        {
+          "subject": "Political Science",
+          "desc": "Study of democratic institutions, statecraft, administration, and public ethics."
+        },
+        {
+          "subject": "Economics",
+          "desc": "Theoretical micro/macro foundation followed by Indian Economy Since Independence and Financial Economics."
+        },
+        {
+          "subject": "Sociology",
+          "desc": "Systematic introduction to social dynamics, sociological theory, and research methodologies in India."
+        }
+      ],
+      "url": "/institutions/santosh-degree-college"
+    }
+  ],
+  "teacherEducation": {
+    "title": "Diploma in Education (D.Ed / T.C.H)",
+    "duration": "2 Academic Years including 3 months Internship",
+    "recognition": "Recognized by NCTE & Permitted by Govt of Karnataka",
+    "email": "santoshdedcollege@gmail.com",
+    "objectives": [
+      "Develop competency-based skills of teaching.",
+      "Produce competent teachers who can be friend, philosopher, and guide to students.",
+      "Empower teacher trainees with communication skills, moral values, and classroom confidence.",
+      "Shape the destiny of India within her classrooms through value-based pedagogy."
+    ],
+    "url": "/institutions/santosh-ded-college"
+  },
+  "pucStreams": {
+    "title": "Pre-University Courses (Fathima PU College)",
+    "duration": "2 Years",
+    "board": "Recognized by Karnataka State PU Board",
+    "streams": [
+      {
+        "name": "Science PCMB",
+        "subjects": "Physics, Chemistry, Mathematics, Biology"
+      },
+      {
+        "name": "Science PCMC",
+        "subjects": "Physics, Chemistry, Mathematics, Computer Science"
+      },
+      {
+        "name": "Science PCME",
+        "subjects": "Physics, Chemistry, Mathematics, Electronics"
+      },
+      {
+        "name": "Commerce HECA",
+        "subjects": "History, Economics, Commerce, Accountancy"
+      },
+      {
+        "name": "Commerce EABC",
+        "subjects": "Economics, Accountancy, Business Studies, Commerce"
+      },
+      {
+        "name": "Arts HEPS",
+        "subjects": "History, Economics, Political Science, Sociology"
+      }
+    ],
+    "languages": [
+      "English",
+      "Hindi",
+      "Kannada",
+      "Urdu"
+    ],
+    "url": "/institutions/fathima-pu-college"
+  }
+}

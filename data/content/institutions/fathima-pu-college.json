@@ -1,0 +1,69 @@
+{
+  "slug": "fathima-pu-college",
+  "name": "Fathima PU College",
+  "location": "Bangarpet",
+  "campus": "Kolar Road Campus, Bangarpet",
+  "level": "Pre-University (Science, Commerce & Arts)",
+  "template": "college",
+  "board": "Recognized by Karnataka State PU Board (Co-educational)",
+  "tagline": "Over a Decade of Top Quality Teaching with 90%+ Pass Rate",
+  "description": "Recognized by Karnataka State PU Board, Fathima PU College conducts 2-year Pre-University courses for boys and girls across Science, Commerce, and Arts streams. We place deep emphasis on interactive learning that leads to comprehensive understanding, not rote memorization.",
+  "keyFacts": [
+    "Over a decade of proven excellence in pre-university teaching",
+    "All lecturers are dedicated subject specialists with university pedigrees",
+    "Consistent pass rate exceeding 90% in state board examinations",
+    "State-of-the-art computer labs, libraries, and science laboratories",
+    "Comprehensive career guidance and competitive exam orientation",
+    "Competitive and recreational sports grounds"
+  ],
+  "pledge": {
+    "weWill": [
+      "Support you with a personal tutor and regular guidance",
+      "Give you realistic feedback on your academic progress",
+      "Provide additional individual support as and where necessary",
+      "Widen your experience through seminars, field visits, and NSS",
+      "Develop your personal interests and athletic talents"
+    ],
+    "inReturnYouWill": [
+      "Work hard and maintain academic sincerity",
+      "Attend classes regularly and punctually (75% minimum)",
+      "Study effectively and complete all assignment records",
+      "Make continuous, demonstrable academic progress"
+    ]
+  },
+  "streams": [
+    {
+      "stream": "Science PCMB",
+      "subjects": "Physics, Chemistry, Mathematics, Biology"
+    },
+    {
+      "stream": "Science PCMC",
+      "subjects": "Physics, Chemistry, Mathematics, Computer Science"
+    },
+    {
+      "stream": "Science PCME",
+      "subjects": "Physics, Chemistry, Mathematics, Electronics"
+    },
+    {
+      "stream": "Commerce HECA",
+      "subjects": "History, Economics, Commerce, Accountancy"
+    },
+    {
+      "stream": "Commerce EABC",
+      "subjects": "Economics, Accountancy, Business Studies, Commerce"
+    },
+    {
+      "stream": "Arts HEPS",
+      "subjects": "History, Economics, Political Science, Sociology"
+    }
+  ],
+  "languages": [
+    "English",
+    "Hindi",
+    "Kannada",
+    "Urdu"
+  ],
+  "phone": "09448106902",
+  "email": "santoshgroupofinstitutions@gmail.com",
+  "image": "/images/campus-building-fathima.jpg"
+}

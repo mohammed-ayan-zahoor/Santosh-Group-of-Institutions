@@ -1,0 +1,37 @@
+{
+  "slug": "santosh-higher-primary-school-bangarpet",
+  "name": "Santosh Higher Primary School",
+  "location": "Bangarpet",
+  "campus": "Kolar Road, Bangarpet",
+  "level": "Middle School (Grades 5\u20137)",
+  "template": "school",
+  "tagline": "Encouraging analytical reasoning and collaborative projects",
+  "description": "The middle school years bridge basic literacy with formal scientific inquiry. Students conduct introductory laboratory observations, participate in debates, explore computer applications, and discover historical narratives.",
+  "highlights": [
+    "Well-equipped science and math learning aids",
+    "Computer literacy from early grades",
+    "Dedicated library reading hours",
+    "Sports and physical education"
+  ],
+  "phone": "09448106902",
+  "email": "santoshgroupofinstitutions@gmail.com",
+  "image": "/images/library-students.jpg",
+  "features": [
+    {
+      "title": "Introductory Science & Computer Labs",
+      "detail": "Hands-on access to our multimedia computer laboratory and science apparatus gives theoretical lessons direct physical meaning."
+    },
+    {
+      "title": "Structured Reading in Campus Library",
+      "detail": "Scheduled weekly library hours expose students to fiction, science periodicals, and historical literature to build lifelong reading habits."
+    },
+    {
+      "title": "Co-Curricular Competitions & Arts",
+      "detail": "Drawing, crafts, music, and elocution contests help young adolescents discover creative strengths beyond exams."
+    },
+    {
+      "title": "Continuous Assessment & Mentorship",
+      "detail": "Monthly academic tests identify learning gaps early, supported by focused remedial assistance from subject teachers."
+    }
+  ]
+}

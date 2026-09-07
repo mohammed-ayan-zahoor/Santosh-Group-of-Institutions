@@ -1,0 +1,54 @@
+{
+  "slug": "about",
+  "metaTitle": "About Us | Santosh Group of Institutions",
+  "metaDescription": "Learn about the vision, leadership, and 34+ year heritage of Santosh Group of Institutions founded by Dr. Al Haji Abdul Sattar.",
+  "intro": {
+    "eyebrow": "OUR STORY & HERITAGE",
+    "title": "34 Years of Empowering Generations from Pre-Primary to Graduation",
+    "paragraph1": "Santosh Group of Institutions was founded by Dr. Al Haji Abdul Sattar, who believes education to be the supreme key to development and human progress. It is the key to changing lives and opening world perspectives in a modern millennium characterized by rapid technological advancement and evolving value systems.",
+    "paragraph2": "Santosh institutions reflect both the changing needs of the 21st century and the unchanging core values of Indian society. With 11 campuses spread strategically between Bangarpet and Bangalore, we offer an indispensable balance between urban opportunity and rural groundedness.",
+    "quote": "If your actions inspire others to dream more, learn more, do more and become more, you are a leader."
+  },
+  "visionAim": {
+    "vision": "We believe in the importance of early experiences in shaping the personality of a child. In the field of education we wish to set trends that will lay the foundation towards building future leaders, thinkers, scientists, and good human beings.",
+    "aim": "The college aims to build complex learning skills in the student and make him responsible for his learning. Building social sensitivity and moral development is our core area of focus."
+  },
+  "kalamBlock": {
+    "quote": "The educationalist should build the capacities of the spirit of inquiry, creativity, entrepreneurial and moral leadership among students and become their role model.",
+    "author": "Dr. A.P.J. Abdul Kalam",
+    "designation": "Former President of India",
+    "image": "/images/dr-kalam.jpg"
+  },
+  "chairmanMessage": {
+    "name": "Dr. Al Haji Abdul Sattar, M.A.",
+    "role": "Chairman, Santosh Group of Institutions",
+    "image": "/images/chairman-abdul-sattar.jpg",
+    "text": [
+      "Welcome to the Santosh Group of Institutions, a place where leaders and potential leaders come to learn and to reflect \u2014 a true center of excellence in education. On behalf of the SGI team, I look forward to welcoming you into our academic family.",
+      "The uncompromising maintenance of high academic standards, an emphasis on innovative and critical thinking, and identification of the 'whole person' as the target for human and cultural development are those factors which truly distinguish Indian education. Curricula must be career-driven and skill-based, contributing directly to the accomplishment of a dignified individual.",
+      "Our institutions span a broad range of disciplines from Pre-Primary School to Graduation across Arts, Commerce, Science, Business Management, and Teacher Education. We believe in shaping students to keep pace with rapid change while remaining responsible, values-driven citizens."
+    ]
+  },
+  "secretaryMessage": {
+    "name": "A. Adil Pasha, B.Sc., B.E.",
+    "role": "Secretary, Santosh Group of Institutions",
+    "image": "/images/secretary-adil-pasha.jpg",
+    "text": [
+      "The going is good. But the good should transform to better and best. The best has to go beyond the best. The individual has the capacity to change, and to change completely through the right kind of education.",
+      "Among personal skills, we stress character formation, self-esteem, and spiritual development. In interpersonal skills: teamwork, empathy, and commitment to society. The backbone of personal growth is our value system: Faith in God, Moral Uprightness, Love of Fellow Being, Social Responsibility, and Pursuit of Excellence.",
+      "Where there is life, there is hope; where there are dreams, they become goals that winners dwell upon until achievement becomes automatic. Come, let us change and achieve the goal together."
+    ]
+  },
+  "qualityFaculty": {
+    "eyebrow": "OUR EDUCATORS",
+    "title": "Faculty of High Academic Professionalism",
+    "description": "Members of our faculty are highly educated and maintain their edge through continuous classroom innovation, seminar presentations, and subject mastery. With small class sizes, our faculty foster close mentorship and lively interactive discussion.",
+    "quote": "SGI has a high level of academic professionalism.",
+    "meetingImage": "/images/faculty-meeting.jpg",
+    "groupImage": "/images/faculty-group.jpg"
+  },
+  "spiritOfCollege": {
+    "title": "Spirit of the College",
+    "prayer": "Oh, God my father, do love me till the end; Permit me to love and obey my Parents and Teachers; Help me always choose and do the right; In our work and in our play, God is with us everyday; Therefore we will never fear; In pain and trouble, hear my plea; O Lord teach me to be good every day."
+  }
+}

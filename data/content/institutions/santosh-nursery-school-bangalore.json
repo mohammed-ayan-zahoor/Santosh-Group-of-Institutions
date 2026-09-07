@@ -1,0 +1,33 @@
+{
+  "slug": "santosh-nursery-school-bangalore",
+  "name": "Santosh Nursery School",
+  "location": "Bangalore",
+  "campus": "Bangalore Urban Campus",
+  "level": "Pre-Primary Education",
+  "template": "school",
+  "tagline": "Early childhood exploration in the garden city",
+  "description": "Serving urban families in Bangalore, our nursery school combines Montessori-inspired play learning with foundational language development, ensuring toddlers build social ease and curiosity in a safe environment.",
+  "highlights": [
+    "Child-safe infrastructure",
+    "Interactive Montessori & play methods",
+    "Parent-teacher progress collaboration",
+    "Nutritious snack and care environment"
+  ],
+  "phone": "09886152151",
+  "email": "santoshgroupofinstitutions@gmail.com",
+  "image": "/images/student-portrait.jpg",
+  "features": [
+    {
+      "title": "Child-Safe Urban Facility",
+      "detail": "Thoughtfully planned indoor activity spaces equipped with sanitized educational play kits and child-safe furnishings."
+    },
+    {
+      "title": "Bilingual Speech Development",
+      "detail": "Gentle daily immersion in communicative English alongside mother-tongue reassurance to build early linguistic fluency."
+    },
+    {
+      "title": "Expressive Arts & Movement",
+      "detail": "Rhymes, action songs, finger painting, and clay modeling encourage sensory coordination and creative confidence."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "slug": "student-life",
+  "metaTitle": "Student Life & Regulations | Santosh Group of Institutions",
+  "metaDescription": "Discover NSS community camps, sports, career guidance, counseling cells, and campus rules & regulations at SGI.",
+  "intro": {
+    "eyebrow": "VIBRANT CAMPUS CULTURE",
+    "title": "Character, Community & Holistic Growth",
+    "lead": "Education at Santosh goes beyond the classroom into community service, sports leadership, career readiness, and disciplined self-governance."
+  },
+  "nss": {
+    "title": "National Service Scheme (NSS)",
+    "overview": "The NSS programme is a government-sponsored initiative conducted across SGI colleges to involve students directly in nation-building activities. Under the guidance of our institutional coordinator, students utilize their time and talents to serve weaker sections of society, participating in inter-collegiate and inter-university camps.",
+    "campTitle": "5-Day Rural Service Camp at T. Gollahalli",
+    "campDesc": "Students and faculty organized intensive village literacy drives, health hygiene campaigns, environmental cleanliness initiatives, and cultural exchanges.",
+    "image": "/images/nss-camp-banner.jpg",
+    "sportsImage": "/images/sports-volleyball.jpg"
+  },
+  "careerAndCounselling": {
+    "placement": {
+      "title": "Career Guidance & Placement Cell",
+      "desc": "Carried out by a dedicated committee of faculty coordinators and student representatives. Our objective is to bring about academic excellence through meaningful industry interaction, streamline student aspirations, and liaise with corporate recruiters for campus placement."
+    },
+    "counselling": {
+      "title": "Student Counselling Cell",
+      "desc": "Staffed by qualified student counselors to help learners improve personalities, adjust to new psychological and academic environments, and build resilience to cope with academic stress during critical exam periods."
+    }
+  },
+  "rules": [
+    {
+      "category": "Attendance & Punctuality",
+      "items": [
+        "Students must be punctual at all times. Late comers are liable to disciplinary action.",
+        "A minimum of 75% attendance is compulsory. Students falling below this threshold will not be permitted to appear for final board/university examinations.",
+        "Leave notes signed by parents/guardians must be submitted whenever a student fails to attend classes.",
+        "A student absent for 3 consecutive days or more without prior written permission must meet the Principal accompanied by parents in person."
+      ]
+    },
+    {
+      "category": "Campus Conduct & Mobile Policy",
+      "items": [
+        "Students are strictly prohibited from using mobile phones inside the college campus.",
+        "Irregular attendance, neglect of assignments, or disobedience to lecturers constitutes sufficient grounds for suspension or dismissal.",
+        "Any damage caused to institutional property will be charged individually to the responsible party.",
+        "Any form of canvassing for seats or examination favors will disqualify the candidate immediately."
+      ]
+    },
+    {
+      "category": "Uniform & Identity Cards",
+      "items": [
+        "College uniform is compulsory for all students and will be issued by the institution upon payment of the prescribed fee.",
+        "Official Identity Cards are issued to every candidate and must be worn visibly at all times while on campus and on institution buses."
+      ]
+    },
+    {
+      "category": "Examinations & Academic Records",
+      "items": [
+        "Monthly tests are conducted regularly to monitor progress. Attendance for monthly tests is strictly mandatory.",
+        "Parents are advised to meet faculty in-charges monthly without fail to review academic records.",
+        "Lesson plan books, practical record books, and observational training records are supplied directly by the institute."
+      ]
+    }
+  ]
+}

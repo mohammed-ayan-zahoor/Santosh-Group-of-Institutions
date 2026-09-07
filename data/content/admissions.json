@@ -1,0 +1,91 @@
+{
+  "slug": "admissions",
+  "metaTitle": "Admissions & Procedure | Santosh Group of Institutions",
+  "metaDescription": "Admission criteria, step-by-step procedures, documents checklist, and academic examination schedules for SGI schools and colleges.",
+  "intro": {
+    "eyebrow": "JOIN OUR COMMUNITY",
+    "title": "Admissions for Academic Year 2026-27",
+    "lead": "Join an institution with over three decades of educational excellence. Follow the step-by-step procedure below to secure your seat."
+  },
+  "eligibility": [
+    {
+      "institution": "Pre-Primary, Primary & High Schools",
+      "criteria": "Open to all eligible students as per state age norms. Transfer certificate and previous academic records required for Grade 1 and above."
+    },
+    {
+      "institution": "Fathima PU College (Science, Commerce, Arts)",
+      "criteria": "Candidates who have passed SSLC / ICSE / CBSE or equivalent 10th standard examinations. Out-of-state candidates require a migration certificate."
+    },
+    {
+      "institution": "Santosh Degree College (BBM, BCA, B.Com, BA)",
+      "criteria": "Successful completion of 2-year Pre-University Course of Karnataka State or any equivalent 10+2 examination recognized by Bangalore University."
+    },
+    {
+      "institution": "Santosh D.Ed (T.C.H) College",
+      "criteria": "Pass in 10+2 / PUC with minimum 50% aggregate marks (45% for SC/ST and Category-1 candidates)."
+    }
+  ],
+  "steps": [
+    {
+      "step": "01",
+      "title": "Obtain Application",
+      "desc": "Collect the official application form from the college admissions office or submit an online inquiry."
+    },
+    {
+      "step": "02",
+      "title": "Submit Form & Documents",
+      "desc": "Submit the completed application form along with attested copies of marks cards and certificates."
+    },
+    {
+      "step": "03",
+      "title": "Selection Announcement",
+      "desc": "Merit list of selected candidates is announced on the campus notice board and via direct communication."
+    },
+    {
+      "step": "04",
+      "title": "Principal Interview & Verification",
+      "desc": "Selected candidates meet the Principal along with parents/guardians with all original certificates for final enrollment."
+    }
+  ],
+  "documents": [
+    "Original & Attested Copies of SSLC / 10th Standard Marks Card",
+    "Original & Attested Copies of PUC / 12th Standard Marks Card (for Degree & D.Ed)",
+    "Original Transfer Certificate (TC) issued by the institution last attended",
+    "Original Migration Certificate (for candidates originating outside Karnataka State)",
+    "Conduct / Character Certificate from the head of the previous institution",
+    "Four recent stamp-sized photographs",
+    "Caste and Income Certificate (if claiming quota concessions)"
+  ],
+  "examSchedule": [
+    {
+      "name": "I Quarterly Examination",
+      "dates": "September, 1st week",
+      "duration": "90 Minutes",
+      "maxMarks": "50"
+    },
+    {
+      "name": "Mid-Term Examination",
+      "dates": "December, 1st week",
+      "duration": "3 Hours",
+      "maxMarks": "100"
+    },
+    {
+      "name": "II Quarterly (for I PUC)",
+      "dates": "February, 1st week",
+      "duration": "90 Minutes",
+      "maxMarks": "50"
+    },
+    {
+      "name": "Preparatory Examination (II PUC / Degree)",
+      "dates": "February, 2nd & 3rd week",
+      "duration": "3 Hours",
+      "maxMarks": "100"
+    },
+    {
+      "name": "Annual Examination (Board / University)",
+      "dates": "Feb last week / March",
+      "duration": "3 Hours",
+      "maxMarks": "100"
+    }
+  ]
+}

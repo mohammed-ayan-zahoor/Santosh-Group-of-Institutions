@@ -1,0 +1,33 @@
+{
+  "slug": "santosh-high-school-bangalore",
+  "name": "Santosh High School",
+  "location": "Bangalore",
+  "campus": "Bangalore Urban Campus",
+  "level": "Secondary Education (Grades 8\u201310)",
+  "template": "school",
+  "tagline": "Academic distinction and future-ready secondary leadership",
+  "description": "Our Bangalore High School prepares students for board examination success and higher secondary entrance. Dedicated subject teachers provide systematic test practice, personal mentorship, and career pathway advice.",
+  "highlights": [
+    "Distinguished faculty track record",
+    "Systematic test series and feedback cycles",
+    "High pass rates in state examinations",
+    "Science and technology exhibitions"
+  ],
+  "phone": "09886152151",
+  "email": "santoshgroupofinstitutions@gmail.com",
+  "image": "/images/faculty-group.jpg",
+  "features": [
+    {
+      "title": "Systematic State Board Coaching",
+      "detail": "Comprehensive coverage of Mathematics, Science, Social Science, and three languages with regular mock test series."
+    },
+    {
+      "title": "Personalized Academic Mentorship",
+      "detail": "Teachers identify specific subject difficulties early, providing targeted tutorials to strengthen concept mastery."
+    },
+    {
+      "title": "Values & Career Preparation",
+      "detail": "Guidance on competitive exam preparation, ethical civic leadership, and stream selection for Pre-University education."
+    }
+  ]
+}

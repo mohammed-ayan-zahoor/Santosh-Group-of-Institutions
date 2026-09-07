@@ -1,0 +1,79 @@
+{
+  "slug": "santosh-degree-college",
+  "name": "Santosh Degree College",
+  "location": "Bangarpet",
+  "campus": "Kolar Road Campus, Bangarpet",
+  "level": "Undergraduate University Degrees",
+  "template": "college",
+  "board": "Affiliated to Bangalore University",
+  "tagline": "Equipping Graduates to Meet Global Challenges Through Experiential Learning",
+  "description": "Santosh Degree College offers 3-year undergraduate degrees affiliated to Bangalore University. Our curriculum supplements lectures with case studies, workshops, industry presentations, computer simulation, and field visits.",
+  "programs": [
+    {
+      "degree": "BBM (Bachelor of Business Management)",
+      "overview": "Designed to train students in essential managerial skills. Emphasizes out-of-the-box thinking, strategizing, and entrepreneurial initiative.",
+      "electives": [
+        "Marketing Management",
+        "Human Resource Management (HRM)",
+        "Financial Management"
+      ],
+      "curriculum": [
+        "Business Economics",
+        "Fundamentals of Accounting",
+        "Business Statistics",
+        "Financial Accounting",
+        "Business Environment",
+        "Corporate Accounting",
+        "Services Management",
+        "International Business",
+        "Computer Business Applications",
+        "Indian Constitution",
+        "Entrepreneurial Development"
+      ]
+    },
+    {
+      "degree": "BCA (Bachelor of Computer Applications)",
+      "overview": "Bridges academic computer science with practical IT industry needs. Intensive laboratory sessions in programming, database architecture, and network administration.",
+      "prospects": [
+        "System Analyst",
+        "Programmer / Developer",
+        "Project Manager",
+        "CRM Administrator",
+        "Software Quality Analyst"
+      ]
+    },
+    {
+      "degree": "B.Com (Bachelor of Commerce)",
+      "overview": "Comprehensive preparation for banking, company secretaryship, stock brokerages, auditing, and corporate financial management.",
+      "electives": [
+        "Accounting Group",
+        "Information Systems & Management"
+      ],
+      "curriculum": [
+        "Financial Accounting",
+        "Business Economics",
+        "HRM",
+        "Business Statistics",
+        "Corporate Accounting",
+        "International Business Environment",
+        "Business Laws",
+        "Management Accounting"
+      ]
+    },
+    {
+      "degree": "BA (Bachelor of Arts)",
+      "overview": "In-depth undergraduate grounding in the humanities, building critical understanding of social structures, economic systems, and democratic governance.",
+      "subjects": [
+        "History (Modernist critique & knowledge creation)",
+        "Political Science (Statecraft & administration)",
+        "Economics (Micro/Macro & Indian Economy)",
+        "Sociology (Theoretical & empirical sociology of India)"
+      ]
+    }
+  ],
+  "eligibility": "Students who have completed 2-year Pre-University Course of Karnataka State or equivalent.",
+  "duration": "3 Academic Years (6 Semesters)",
+  "phone": "09448106902",
+  "email": "santoshgroupofinstitutions@gmail.com",
+  "image": "/images/bbm-students.jpg"
+}

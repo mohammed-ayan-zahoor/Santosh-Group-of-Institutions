@@ -1,0 +1,37 @@
+{
+  "slug": "santosh-high-school-bangarpet",
+  "name": "Santosh High School",
+  "location": "Bangarpet",
+  "campus": "Kolar Road, Bangarpet",
+  "level": "Secondary Education (Grades 8\u201310)",
+  "template": "school",
+  "tagline": "Excellence in SSLC Board preparation and character formation",
+  "description": "Santosh High School has an established record of high pass percentages and district distinctions in the Karnataka SSLC Board examinations. We balance rigorous test preparation with sports leadership and civic awareness.",
+  "highlights": [
+    "Experienced subject-specialist teachers",
+    "Intensive board examination preparatory tests",
+    "Career counselling and aptitude orientation",
+    "Participation in taluk-level athletics and debates"
+  ],
+  "phone": "09448106902",
+  "email": "santoshgroupofinstitutions@gmail.com",
+  "image": "/images/faculty-group.jpg",
+  "features": [
+    {
+      "title": "Karnataka SSLC Board Mastery",
+      "detail": "Experienced subject specialists guide students through the state syllabus with structured chapter revisions and preparatory test series."
+    },
+    {
+      "title": "Discipline & High Attendance Standards",
+      "detail": "A compulsory 75% attendance policy and formal uniform code instill the personal decorum needed for higher academic life."
+    },
+    {
+      "title": "Taluk & District Athletic Representation",
+      "detail": "Students compete regularly in taluk-level volleyball, athletics, and inter-school sports meets on our central grounds."
+    },
+    {
+      "title": "Pre-University Stream Orientation",
+      "detail": "Individual counseling in Grade 10 helps students and parents choose the right combination between Science, Commerce, and Arts."
+    }
+  ]
+}

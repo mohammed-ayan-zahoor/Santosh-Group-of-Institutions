@@ -1,0 +1,33 @@
+{
+  "slug": "santosh-higher-primary-school-bangalore",
+  "name": "Santosh Higher Primary School",
+  "location": "Bangalore",
+  "campus": "Bangalore Urban Campus",
+  "level": "Middle School (Grades 5\u20137)",
+  "template": "school",
+  "tagline": "Empowering independent thinkers and inquiring minds",
+  "description": "Preparing students for contemporary challenges through practical science experiments, digital skills, and cooperative learning, grounded in enduring cultural ethics.",
+  "highlights": [
+    "Computer science and digital skills",
+    "Science club and project competitions",
+    "Comprehensive library resources",
+    "Sports coaching and leadership"
+  ],
+  "phone": "09886152151",
+  "email": "santoshgroupofinstitutions@gmail.com",
+  "image": "/images/library-students.jpg",
+  "features": [
+    {
+      "title": "Digital Literacy & Lab Sessions",
+      "detail": "Practical computer instruction covering operating systems, basic office applications, and structured logic."
+    },
+    {
+      "title": "Science Inquiry & Project Work",
+      "detail": "Encouraging students to build models, observe natural phenomena, and present findings clearly before their peers."
+    },
+    {
+      "title": "Sports & Team Leadership",
+      "detail": "Organized team athletics, badminton, and outdoor games developing physical endurance and peer collaboration."
+    }
+  ]
+}

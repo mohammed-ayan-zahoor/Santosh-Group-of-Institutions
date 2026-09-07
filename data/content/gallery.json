@@ -1,0 +1,103 @@
+{
+  "slug": "gallery",
+  "metaTitle": "Campus Gallery | Santosh Group of Institutions",
+  "metaDescription": "Archival and contemporary photo gallery featuring dignitary visits, campus events, academic sessions, and student life.",
+  "categories": [
+    "All",
+    "Campus",
+    "Academics",
+    "Sports & NSS"
+  ],
+  "photos": [
+    {
+      "title": "Main Campus Entrance & Institutional Grounds",
+      "category": "Campus",
+      "image": "/images/campus-main-entrance.jpg",
+      "caption": "Main entrance of Santosh Group of Educational Institutions in Bangarpet."
+    },
+    {
+      "title": "Central Campus Courtyard & Quad",
+      "category": "Campus",
+      "image": "/images/campus-courtyard-panorama.jpg",
+      "caption": "Panoramic view of our central courtyard, mature campus trees, and student assembly area."
+    },
+    {
+      "title": "Academic Corridors & Classroom Wings",
+      "category": "Campus",
+      "image": "/images/campus-academic-corridor.jpg",
+      "caption": "Multi-tiered academic corridors with open-air student walkways."
+    },
+    {
+      "title": "Santosh English School Main Gate",
+      "category": "Campus",
+      "image": "/images/campus-school-entrance.jpg",
+      "caption": "Archway entrance to Santosh Nursery, Primary, and High School campuses."
+    },
+    {
+      "title": "Academic Complex & Building Facade",
+      "category": "Campus",
+      "image": "/images/campus-building-facade.jpg",
+      "caption": "Contemporary academic building housing classrooms and departmental faculties."
+    },
+    {
+      "title": "Dr. A.P.J. Abdul Kalam Tribute",
+      "category": "Campus",
+      "image": "/images/dr-kalam.jpg",
+      "caption": "Guiding inspiration for student inquiry and leadership."
+    },
+    {
+      "title": "Fathima PU College Main Campus",
+      "category": "Campus",
+      "image": "/images/campus-building-fathima.jpg",
+      "caption": "Front facade of Fathima PU & Degree College in Bangarpet."
+    },
+    {
+      "title": "Santosh D.Ed College Building",
+      "category": "Campus",
+      "image": "/images/campus-building-ded.jpg",
+      "caption": "Teacher education block with spacious seminar halls."
+    },
+    {
+      "title": "Interactive Lecture Session",
+      "category": "Academics",
+      "image": "/images/classroom-students.jpg",
+      "caption": "Students in formal uniform engaged in classroom discussions."
+    },
+    {
+      "title": "BCA Computer Laboratory",
+      "category": "Academics",
+      "image": "/images/bca-computer-lab.jpg",
+      "caption": "Students programming in modern multimedia computer labs."
+    },
+    {
+      "title": "Reference Library & Study Hall",
+      "category": "Academics",
+      "image": "/images/library-students.jpg",
+      "caption": "Extensive collection of reference books and journals."
+    },
+    {
+      "title": "D.Ed Teacher Trainee Cohort",
+      "category": "Academics",
+      "image": "/images/ded-teachers.jpg",
+      "caption": "Trainees preparing teaching-learning materials."
+    },
+    {
+      "title": "NSS Rural Camp at T. Gollahalli",
+      "category": "Sports & NSS",
+      "image": "/images/nss-camp-banner.jpg",
+      "caption": "Five-day intensive community service camp."
+    },
+    {
+      "title": "Inter-Collegiate Volleyball Tournament",
+      "category": "Sports & NSS",
+      "image": "/images/sports-volleyball.jpg",
+      "caption": "Outdoor games and athletics on the central campus grounds."
+    },
+    {
+      "title": "Institution Bus Fleet",
+      "category": "Campus",
+      "image": "/images/college-bus.jpg",
+      "caption": "Safe transportation network spanning Bangarpet and Kolar taluks."
+    }
+  ]
+}

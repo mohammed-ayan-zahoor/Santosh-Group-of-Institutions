@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* EdmunHigh exact palette */
+  --bg-page: #FFFFFF;
+  --bg-secondary: #EFF4F8;
+  --border-subtle: #DAE3EA;
+  --text-primary: #14283D;
+  --text-secondary: #6C7783;
+  --accent-dark: #14283D;
+  --accent-primary: #14283D;
+  --accent-highlight: #14283D;
+  --trust-anchor: #80182A;
+  --font-inter: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-fraunces: var(--font-inter);
+}
+
+body {
+  background-color: var(--bg-page);
+  color: var(--text-primary);
+  font-family: var(--font-inter);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Eyebrow Label Style - small-caps, muted slate */
+.eyebrow {
+  font-family: var(--font-inter);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+
+/* Headings - normal sans-serif font throughout */
+h1, h2, h3, h4, .font-serif {
+  font-family: var(--font-inter);
+  color: var(--text-primary);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+
+
+/* Button shapes per reference */
+.btn-primary {
+  background-color: var(--accent-dark);
+  color: #FFFFFF;
+  border-radius: 4px;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: opacity 0.15s ease;
+}
+
+.btn-primary:hover {
+  opacity: 0.92;
+}
+
+.btn-pill-nav {
+  background-color: var(--accent-dark);
+  color: #FFFFFF;
+  border-radius: 4px;
+  padding: 0.5rem 1.25rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: opacity 0.15s ease;
+}
+
+.btn-pill-nav:hover {
+  opacity: 0.92;
+}
+
+/* Unfilled outline circle icon container */
+.icon-circle {
+  width: 48px;
+  height: 48px;
+  border-radius: 9999px;
+  border: 1px solid var(--border-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-primary);
+  flex-shrink: 0;
+  background-color: transparent;
+}
+
+/* Subtle line link */
+.link-underlined {
+  color: var(--text-primary);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  transition: opacity 0.15s ease;
+}
+
+.link-underlined:hover {
+  opacity: 0.75;
+}
+
+/* Overlapping tooltip/card badge */
+.floating-tooltip {
+  background-color: var(--accent-dark);
+  color: #FFFFFF;
+  border-radius: 0px;
+  padding: 1.25rem 1.5rem;
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  max-width: 280px;
+  z-index: 10;
+}

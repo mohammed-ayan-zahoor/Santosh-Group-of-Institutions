@@ -1,0 +1,108 @@
+{
+  "slug": "campus-life",
+  "metaTitle": "Campus & Infrastructure | Santosh Group of Institutions",
+  "metaDescription": "Explore our classrooms, high-tech computer labs, library, hostel accommodations, college bus fleet, and outdoor sports grounds.",
+  "intro": {
+    "eyebrow": "CAMPUS & INFRASTRUCTURE",
+    "title": "A Stimulating Physical Environment for Learning",
+    "lead": "We believe physical ambience is crucial to successful learning. Our campuses are thoughtfully planned with natural light, modern amenities, and safe infrastructure."
+  },
+  "facilities": [
+    {
+      "num": "01",
+      "title": "Broad-Based Curriculum Spaces",
+      "desc": "Stimulating environments designed to appeal to and challenge a wide spectrum of student interests and aptitudes."
+    },
+    {
+      "num": "02",
+      "title": "Explorative Teaching Labs",
+      "desc": "Facilitating learning through hands-on observation, inquiry, and scientific experimentation rather than rote memory."
+    },
+    {
+      "num": "03",
+      "title": "Academic & Social Platforms",
+      "desc": "Spacious platforms designed to promote academic collaboration, seminar presentations, and community development."
+    },
+    {
+      "num": "04",
+      "title": "Stimulating Physical Ambience",
+      "desc": "Serene green surroundings that ensure learning is pleasant, motivating, and free from urban distraction."
+    },
+    {
+      "num": "05",
+      "title": "Airy & Naturally Lit Classrooms",
+      "desc": "Large, colorful, student-friendly lecture halls with generous cross-ventilation and natural illumination."
+    },
+    {
+      "num": "06",
+      "title": "Ergonomic Furniture",
+      "desc": "Comfortable chairs and modular tables suitable for both focused individual study and active group collaboration."
+    },
+    {
+      "num": "07",
+      "title": "Interactive Activity Rooms",
+      "desc": "Dedicated activity halls where younger learners have fun while absorbing core concepts indirectly through educational kits."
+    },
+    {
+      "num": "08",
+      "title": "Modern Multimedia Computer Labs",
+      "desc": "Equipped with high-speed internet, modern computers, overhead projectors, multimedia CDs, DVDs, and specialized software."
+    },
+    {
+      "num": "09",
+      "title": "Well-Stocked Library",
+      "desc": "Extensive catalog of fiction, non-fiction, academic references, journals, and periodicals catering to every age group."
+    },
+    {
+      "num": "10",
+      "title": "Separate Boys & Girls Hostels",
+      "desc": "Safe residential accommodations with 24-hour water supply, hot water facilities, uninterrupted power, and strict supervision."
+    },
+    {
+      "num": "11",
+      "title": "Dedicated College Bus Fleet",
+      "desc": "Well-maintained fleet of institution buses ferry students safely between surrounding towns, villages, and campus daily."
+    },
+    {
+      "num": "12",
+      "title": "Expansive Sports Grounds",
+      "desc": "Large outdoor playing areas with volleyball, cricket, badminton, and age-appropriate playground equipment."
+    },
+    {
+      "num": "13",
+      "title": "Spacious College Auditorium",
+      "desc": "Acoustically designed hall for institutional meetings, guest lectures, annual days, and cultural celebrations."
+    },
+    {
+      "num": "14",
+      "title": "Landscaped Gardens",
+      "desc": "Lush campus greenery and floral gardens creating an uplifting, calm backdrop for study and reflection."
+    }
+  ],
+  "gallery": [
+    {
+      "image": "/images/campus-building-fathima.jpg",
+      "caption": "Fathima PU College & Degree Campus Building"
+    },
+    {
+      "image": "/images/classroom-students.jpg",
+      "caption": "Spacious, well-lit classrooms with uniform discipline"
+    },
+    {
+      "image": "/images/library-students.jpg",
+      "caption": "Well-stocked library supporting research & reading"
+    },
+    {
+      "image": "/images/bca-computer-lab.jpg",
+      "caption": "Computer laboratory with multimedia systems"
+    },
+    {
+      "image": "/images/college-bus.jpg",
+      "caption": "Dedicated fleet of institution buses for daily transport"
+    },
+    {
+      "image": "/images/auditorium-event.jpg",
+      "caption": "Spacious auditorium for campus gatherings and awards"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "slug": "santosh-primary-school-bangalore",
+  "name": "Santosh Primary School",
+  "location": "Bangalore",
+  "campus": "Bangalore Urban Campus",
+  "level": "Primary Education (Grades 1\u20134)",
+  "template": "school",
+  "tagline": "Holistic foundational learning and creative expression",
+  "description": "Santosh Primary School Bangalore pairs academic rigor with personal attention. We focus on developing core computational skills, reading comprehension, and social harmony among young learners.",
+  "highlights": [
+    "Experienced urban teaching faculty",
+    "Multi-lingual proficiency focus",
+    "Classroom smart learning aids",
+    "Arts, crafts, and physical training"
+  ],
+  "phone": "09886152151",
+  "email": "santoshgroupofinstitutions@gmail.com",
+  "image": "/images/classroom-students.jpg",
+  "features": [
+    {
+      "title": "Balanced Core Curriculum",
+      "detail": "Equal emphasis on language fluency, mathematics, environmental studies, and computer basics from early grades."
+    },
+    {
+      "title": "Active Classroom Participation",
+      "detail": "Interactive teaching methods ensure students speak, ask questions, and engage rather than passively copying notes."
+    },
+    {
+      "title": "Regular Teacher-Parent Alignment",
+      "detail": "Monthly academic and personal reviews ensure each child receives customized encouragement at school and at home."
+    }
+  ]
+}
