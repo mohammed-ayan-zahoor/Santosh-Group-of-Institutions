@@ -85,20 +85,28 @@
       "caption": "Fathima PU College & Degree Campus Building"
     },
     {
-      "image": "/images/classroom-students.jpg",
+      "image": "/images/classroom-lecture.jpg",
       "caption": "Spacious, well-lit classrooms with uniform discipline"
     },
     {
-      "image": "/images/library-students.jpg",
-      "caption": "Well-stocked library supporting research & reading"
+      "image": "/images/central-library-reading.jpg",
+      "caption": "Central library supporting research & reading"
     },
     {
       "image": "/images/bca-computer-lab.jpg",
       "caption": "Computer laboratory with multimedia systems"
     },
     {
+      "image": "/images/science-biology-skeleton.jpg",
+      "caption": "Modern science laboratory with practical demonstrations"
+    },
+    {
       "image": "/images/college-bus.jpg",
       "caption": "Dedicated fleet of institution buses for daily transport"
+    },
+    {
+      "image": "/images/campus-assembly.jpg",
+      "caption": "Morning assembly on campus grounds"
     },
     {
       "image": "/images/auditorium-event.jpg",

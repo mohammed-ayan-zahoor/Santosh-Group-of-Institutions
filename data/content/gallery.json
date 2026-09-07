@@ -6,6 +6,7 @@
     "All",
     "Campus",
     "Academics",
+    "Leadership & Faculty",
     "Sports & NSS"
   ],
   "photos": [
@@ -22,6 +23,12 @@
       "caption": "Panoramic view of our central courtyard, mature campus trees, and student assembly area."
     },
     {
+      "title": "Morning Campus Assembly",
+      "category": "Campus",
+      "image": "/images/campus-assembly.jpg",
+      "caption": "Morning assembly in uniform on the central campus quadrangle."
+    },
+    {
       "title": "Academic Corridors & Classroom Wings",
       "category": "Campus",
       "image": "/images/campus-academic-corridor.jpg",
@@ -32,18 +39,6 @@
       "category": "Campus",
       "image": "/images/campus-school-entrance.jpg",
       "caption": "Archway entrance to Santosh Nursery, Primary, and High School campuses."
-    },
-    {
-      "title": "Academic Complex & Building Facade",
-      "category": "Campus",
-      "image": "/images/campus-building-facade.jpg",
-      "caption": "Contemporary academic building housing classrooms and departmental faculties."
-    },
-    {
-      "title": "Dr. A.P.J. Abdul Kalam Tribute",
-      "category": "Campus",
-      "image": "/images/dr-kalam.jpg",
-      "caption": "Guiding inspiration for student inquiry and leadership."
     },
     {
       "title": "Fathima PU College Main Campus",
@@ -58,10 +53,10 @@
       "caption": "Teacher education block with spacious seminar halls."
     },
     {
-      "title": "Interactive Lecture Session",
-      "category": "Academics",
-      "image": "/images/classroom-students.jpg",
-      "caption": "Students in formal uniform engaged in classroom discussions."
+      "title": "Institution Bus Fleet",
+      "category": "Campus",
+      "image": "/images/college-bus.jpg",
+      "caption": "Dedicated fleet of institution buses for daily transport across Bangarpet and Kolar."
     },
     {
       "title": "BCA Computer Laboratory",
@@ -70,16 +65,100 @@
       "caption": "Students programming in modern multimedia computer labs."
     },
     {
-      "title": "Reference Library & Study Hall",
+      "title": "IT & Software Computer Lab",
       "category": "Academics",
-      "image": "/images/library-students.jpg",
-      "caption": "Extensive collection of reference books and journals."
+      "image": "/images/it-computer-lab-girls.jpg",
+      "caption": "Degree students working at dedicated computer workstations."
+    },
+    {
+      "title": "D.Ed Educational Technology Lab",
+      "category": "Academics",
+      "image": "/images/ded-computer-lab.jpg",
+      "caption": "Teacher trainees acquiring computer literacy and digital pedagogy skills."
+    },
+    {
+      "title": "Science & Biology Laboratory",
+      "category": "Academics",
+      "image": "/images/science-lab-practical.jpg",
+      "caption": "Teacher trainees conducting specimen and practical science experiments."
+    },
+    {
+      "title": "Anatomy & Life Sciences Demonstration",
+      "category": "Academics",
+      "image": "/images/science-biology-skeleton.jpg",
+      "caption": "Faculty member demonstrating anatomy and biology models in lecture hall."
+    },
+    {
+      "title": "Central Library & Reading Hall",
+      "category": "Academics",
+      "image": "/images/central-library-reading.jpg",
+      "caption": "Extensive collection of reference books, textbooks, and academic journals."
+    },
+    {
+      "title": "Academic Research & Study",
+      "category": "Academics",
+      "image": "/images/library-reference.jpg",
+      "caption": "Degree students consulting reference volumes in the college library."
+    },
+    {
+      "title": "Interactive Classroom Lecture",
+      "category": "Academics",
+      "image": "/images/classroom-lecture.jpg",
+      "caption": "Attentive students engaged in lecture hall discussions."
+    },
+    {
+      "title": "Lecture Hall Study Session",
+      "category": "Academics",
+      "image": "/images/classroom-lecture-hall.jpg",
+      "caption": "Comfortable seating and modern teaching aids in lecture rooms."
     },
     {
       "title": "D.Ed Teacher Trainee Cohort",
       "category": "Academics",
       "image": "/images/ded-teachers.jpg",
-      "caption": "Trainees preparing teaching-learning materials."
+      "caption": "Teacher trainees preparing lesson plans and pedagogical materials."
+    },
+    {
+      "title": "BBM & Management Students",
+      "category": "Academics",
+      "image": "/images/bbm-students.jpg",
+      "caption": "Students in formal business blazers preparing for corporate careers."
+    },
+    {
+      "title": "Santosh D.Ed College Faculty Meeting",
+      "category": "Leadership & Faculty",
+      "image": "/images/ded-faculty-conference.jpg",
+      "caption": "Faculty members and leadership assembled in the college conference hall."
+    },
+    {
+      "title": "Governing Board & Academic Council",
+      "category": "Leadership & Faculty",
+      "image": "/images/boardroom-leadership.jpg",
+      "caption": "Chairman Deshmukh K. Santosh, Secretary, and department heads in the boardroom."
+    },
+    {
+      "title": "Graduation Cohort & Institutional Staff",
+      "category": "Leadership & Faculty",
+      "image": "/images/faculty-graduation-cohort.jpg",
+      "caption": "Annual group photograph of graduating students and academic faculty."
+    },
+    {
+      "title": "Visit of State Education Minister",
+      "category": "Leadership & Faculty",
+      "image": "/images/visit-education-minister.jpg",
+      "caption": "Honorable Education Minister visiting the institute and congratulating Chairman Deshmukh K. Santosh."
+    },
+    {
+      "title": "Annual Excellence & Award Presentation",
+      "category": "Leadership & Faculty",
+      "image": "/images/santosh-award-ceremony.jpg",
+      "caption": "Chairman Deshmukh K. Santosh presenting prestigious trophies to honorees."
+    },
+    {
+      "title": "Dr. A.P.J. Abdul Kalam Tribute",
+      "category": "Campus",
+      "image": "/images/dr-kalam.jpg",
+      "caption": "Guiding inspiration for student inquiry and leadership."
     },
     {
       "title": "NSS Rural Camp at T. Gollahalli",
@@ -92,12 +171,6 @@
       "category": "Sports & NSS",
       "image": "/images/sports-volleyball.jpg",
       "caption": "Outdoor games and athletics on the central campus grounds."
-    },
-    {
-      "title": "Institution Bus Fleet",
-      "category": "Campus",
-      "image": "/images/college-bus.jpg",
-      "caption": "Safe transportation network spanning Bangarpet and Kolar taluks."
     }
   ]
 }
