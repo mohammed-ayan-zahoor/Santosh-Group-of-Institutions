@@ -5,8 +5,9 @@ services:
       dockerfile: Dockerfile
     restart: always
     ports:
-      - "3000:3000"
+      - "8945:8945"
     environment:
+      - PORT=8945
       - NODE_ENV=production
       - MONGODB_URI=mongodb://mongo:27017/santosh_group
       - MONGODB_DB=santosh_group
