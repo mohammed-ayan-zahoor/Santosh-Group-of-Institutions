@@ -1,0 +1,26 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - MONGODB_URI=mongodb://mongo:27017/santosh_group
+      - MONGODB_DB=santosh_group
+      - ADMIN_PASSWORD=${ADMIN_PASSWORD:-santosh1977}
+    depends_on:
+      - mongo
+
+  mongo:
+    image: mongo:7.0
+    restart: always
+    ports:
+      - "127.0.0.1:27017:27017"
+    volumes:
+      - mongo_data:/data/db
+
+volumes:
+  mongo_data:
