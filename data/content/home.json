@@ -13,7 +13,34 @@
     "secondaryCta": {
       "text": "Admissions & Procedure",
       "url": "/admissions"
-    }
+    },
+    "slides": [
+      {
+        "src": "/images/campus-main-entrance.jpg",
+        "alt": "Santosh Group of Educational Institutions main campus entrance and grounds",
+        "category": "Main Campus & Institutional Grounds"
+      },
+      {
+        "src": "/images/campus-courtyard-panorama.jpg",
+        "alt": "Panoramic view of Santosh Group courtyard, academic buildings, and campus trees",
+        "category": "Central Courtyard & Campus Quad"
+      },
+      {
+        "src": "/images/campus-academic-corridor.jpg",
+        "alt": "Architectural corridor and classroom wings at Santosh Group of Institutions",
+        "category": "Academic Corridors & Wings"
+      },
+      {
+        "src": "/images/campus-school-entrance.jpg",
+        "alt": "Santosh English School and High School entrance gate with students in Bangarpet",
+        "category": "Santosh English School & Campus Gate"
+      },
+      {
+        "src": "/images/campus-building-facade.jpg",
+        "alt": "Santosh Group of Institutions academic building facade with institutional signage",
+        "category": "Academic Complex & Building Facade"
+      }
+    ]
   },
   "stats": [
     {

@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useParams, useRouter } from "next/navigation";
 import Link from "next/link";
 import {
@@ -17,6 +17,9 @@ import {
   ChevronDown,
   ChevronRight,
   Layers,
+  Upload,
+  Loader2,
+  ImageIcon,
 } from "lucide-react";
 
 function formatLabel(key: string): string {
@@ -25,6 +28,7 @@ function formatLabel(key: string): string {
   if (key.toLowerCase() === "url") return "URL / Link";
   if (key.toLowerCase() === "seo") return "SEO";
   if (key.toLowerCase() === "sgi") return "SGI";
+  if (key.toLowerCase() === "src") return "Image Source";
   return key
     .replace(/([A-Z])/g, " $1")
     .replace(/[_-]/g, " ")
@@ -53,6 +57,29 @@ function isLongText(key: string, val: any): boolean {
   );
 }
 
+function isImageField(keyName: string, value: any): boolean {
+  const lower = keyName.toLowerCase();
+  if (
+    lower.includes("image") ||
+    lower.includes("photo") ||
+    lower.includes("logo") ||
+    lower.includes("banner") ||
+    lower === "src" ||
+    lower === "img"
+  ) {
+    return true;
+  }
+  if (
+    typeof value === "string" &&
+    (value.startsWith("/images/") ||
+      value.includes("cloudinary.com") ||
+      /\.(jpg|jpeg|png|webp|svg|gif)$/i.test(value))
+  ) {
+    return true;
+  }
+  return false;
+}
+
 // Generate an empty template for an array item based on existing items
 function createItemTemplate(sampleItem: any): any {
   if (typeof sampleItem === "string") return "";
@@ -79,8 +106,10 @@ export default function ContentEditorPage() {
   const [rawJson, setRawJson] = useState("");
   const [saveSuccess, setSaveSuccess] = useState(false);
   const [errorMsg, setErrorMsg] = useState("");
+  const [uploadSuccessMsg, setUploadSuccessMsg] = useState("");
   const [activeTab, setActiveTab] = useState<"fields" | "json">("fields");
   const [collapsedSections, setCollapsedSections] = useState<Record<string, boolean>>({});
+  const [uploadingPath, setUploadingPath] = useState<string | null>(null);
 
   // Load content for this slug
   useEffect(() => {
@@ -158,6 +187,37 @@ export default function ContentEditorPage() {
     setRawJson(JSON.stringify(updated, null, 2));
   };
 
+  // Handle direct file upload to Cloudinary
+  const handleImageUpload = async (path: (string | number)[], file: File) => {
+    const pathKey = path.join(".");
+    setUploadingPath(pathKey);
+    setErrorMsg("");
+    setUploadSuccessMsg("");
+
+    try {
+      const formData = new FormData();
+      formData.append("file", file);
+
+      const res = await fetch("/api/admin/upload", {
+        method: "POST",
+        body: formData,
+      });
+      const data = await res.json();
+
+      if (data.success && data.url) {
+        handleFieldChange(path, data.url);
+        setUploadSuccessMsg("Image successfully uploaded to Cloudinary!");
+        setTimeout(() => setUploadSuccessMsg(""), 4000);
+      } else {
+        setErrorMsg(data.error || "Failed to upload image to Cloudinary.");
+      }
+    } catch (err: any) {
+      setErrorMsg("Network error uploading image: " + err.message);
+    } finally {
+      setUploadingPath(null);
+    }
+  };
+
   // Format JSON helper
   const handleFormatJson = () => {
     try {
@@ -230,6 +290,9 @@ export default function ContentEditorPage() {
     path: (string | number)[],
     depth: number = 0
   ): React.ReactNode => {
+    const pathKey = path.join(".");
+    const isUploading = uploadingPath === pathKey;
+
     // 1. Null or undefined
     if (value === null || value === undefined) {
       return (
@@ -272,8 +335,84 @@ export default function ContentEditorPage() {
       );
     }
 
-    // 4. String
+    // 4. String (Check if Image Field)
     if (typeof value === "string") {
+      if (isImageField(keyName, value)) {
+        return (
+          <div className="space-y-2">
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2">
+              <input
+                type="text"
+                value={value}
+                placeholder="/images/example.jpg or https://res.cloudinary.com/..."
+                onChange={(e) => handleFieldChange(path, e.target.value)}
+                className="flex-1 text-sm p-2.5 bg-cream border border-taupe rounded-[4px] focus:outline-none focus:border-forest font-mono text-xs"
+              />
+
+              <label
+                className={`btn-primary shrink-0 text-xs py-2 px-3 inline-flex items-center justify-center gap-1.5 cursor-pointer select-none ${
+                  isUploading ? "opacity-60 pointer-events-none" : ""
+                }`}
+              >
+                {isUploading ? (
+                  <>
+                    <Loader2 className="w-3.5 h-3.5 animate-spin" />
+                    <span>Uploading...</span>
+                  </>
+                ) : (
+                  <>
+                    <Upload className="w-3.5 h-3.5" />
+                    <span>Upload to Cloudinary</span>
+                  </>
+                )}
+                <input
+                  type="file"
+                  accept="image/*"
+                  disabled={isUploading}
+                  className="hidden"
+                  onChange={(e) => {
+                    const file = e.target.files?.[0];
+                    if (file) {
+                      handleImageUpload(path, file);
+                    }
+                  }}
+                />
+              </label>
+            </div>
+
+            {/* Thumbnail Preview */}
+            {value && (
+              <div className="flex items-center gap-3 p-2 bg-cream/50 border border-taupe rounded-[4px]">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={value}
+                  alt={keyName}
+                  className="w-14 h-14 object-cover rounded border border-taupe bg-white shrink-0"
+                  onError={(e) => {
+                    (e.target as HTMLElement).style.display = "none";
+                  }}
+                />
+                <div className="space-y-0.5 overflow-hidden">
+                  <div className="text-[11px] font-medium text-charcoal flex items-center gap-1">
+                    <ImageIcon className="w-3 h-3 text-forest shrink-0" />
+                    <span>Image Preview</span>
+                  </div>
+                  <a
+                    href={value}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-[11px] text-forest underline hover:text-gold inline-flex items-center gap-1 truncate block"
+                  >
+                    <span>View full size</span>
+                    <ExternalLink className="w-2.5 h-2.5 shrink-0" />
+                  </a>
+                </div>
+              </div>
+            )}
+          </div>
+        );
+      }
+
       if (isLongText(keyName, value)) {
         return (
           <textarea
@@ -284,6 +423,7 @@ export default function ContentEditorPage() {
           />
         );
       }
+
       return (
         <input
           type="text"
@@ -392,7 +532,10 @@ export default function ContentEditorPage() {
                         <div
                           key={subK}
                           className={
-                            isLongText(subK, subV) || Array.isArray(subV) || (typeof subV === "object" && subV !== null)
+                            isLongText(subK, subV) ||
+                            isImageField(subK, subV) ||
+                            Array.isArray(subV) ||
+                            (typeof subV === "object" && subV !== null)
                               ? "sm:col-span-2 space-y-1"
                               : "space-y-1"
                           }
@@ -431,7 +574,10 @@ export default function ContentEditorPage() {
               <div
                 key={subK}
                 className={
-                  isLongText(subK, subV) || Array.isArray(subV) || (typeof subV === "object" && subV !== null)
+                  isLongText(subK, subV) ||
+                  isImageField(subK, subV) ||
+                  Array.isArray(subV) ||
+                  (typeof subV === "object" && subV !== null)
                     ? "sm:col-span-2 space-y-1.5"
                     : "space-y-1.5"
                 }
@@ -514,6 +660,13 @@ export default function ContentEditorPage() {
           >
             View Live Site →
           </Link>
+        </div>
+      )}
+
+      {uploadSuccessMsg && (
+        <div className="p-4 bg-forest text-white border border-forest flex items-center gap-2 text-xs font-medium">
+          <CheckCircle2 className="w-4 h-4 text-gold shrink-0" />
+          <span>{uploadSuccessMsg}</span>
         </div>
       )}
 
@@ -618,7 +771,11 @@ export default function ContentEditorPage() {
                 {generalKeys.map((key) => (
                   <div
                     key={key}
-                    className={isLongText(key, contentObj[key]) ? "sm:col-span-2 space-y-1" : "space-y-1"}
+                    className={
+                      isLongText(key, contentObj[key]) || isImageField(key, contentObj[key])
+                        ? "sm:col-span-2 space-y-1"
+                        : "space-y-1"
+                    }
                   >
                     <label className="block text-xs uppercase tracking-wider font-semibold text-charcoal">
                       {formatLabel(key)}

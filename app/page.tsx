@@ -68,7 +68,7 @@ export default async function HomePage() {
         </div>
 
         {/* High-Resolution Hero Campus Carousel — Static typography, cinematic photo carousel */}
-        <HeroCarousel />
+        <HeroCarousel slides={hero.slides} />
       </section>
 
       {/* 2. STAT STRIP — Unboxed, horizontal border rules */}

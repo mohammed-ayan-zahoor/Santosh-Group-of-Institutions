@@ -12,6 +12,10 @@ services:
       - MONGODB_URI=mongodb://mongo:27017/santosh_group
       - MONGODB_DB=santosh_group
       - ADMIN_PASSWORD=${ADMIN_PASSWORD:-santosh1977}
+      - CLOUDINARY_CLOUD_NAME=${CLOUDINARY_CLOUD_NAME:-}
+      - CLOUDINARY_API_KEY=${CLOUDINARY_API_KEY:-}
+      - CLOUDINARY_API_SECRET=${CLOUDINARY_API_SECRET:-}
+      - CLOUDINARY_UPLOAD_PRESET=${CLOUDINARY_UPLOAD_PRESET:-}
     depends_on:
       - mongo
 
