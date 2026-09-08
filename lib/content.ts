@@ -1,5 +1,6 @@
 import fs from "fs";
 import path from "path";
+import { ObjectId } from "mongodb";
 import { getDatabase } from "./mongodb";
 
 const CONTENT_DIR = path.join(process.cwd(), "data", "content");
@@ -209,4 +210,43 @@ export async function getAllInquiries(): Promise<any[]> {
 
   const all = Array.from(inquiriesMap.values());
   return all.sort((a, b) => new Date(b.createdAt || 0).getTime() - new Date(a.createdAt || 0).getTime());
+}
+
+/**
+ * Delete an inquiry by ID from both MongoDB and local backup.
+ */
+export async function deleteInquiry(id: string): Promise<{ success: boolean; error?: string }> {
+  try {
+    // 1. Delete from MongoDB
+    const db = await getDatabase();
+    if (db) {
+      try {
+        if (ObjectId.isValid(id)) {
+          await db.collection("inquiries").deleteOne({
+            $or: [{ _id: new ObjectId(id) }, { _id: id as any }],
+          });
+        } else {
+          await db.collection("inquiries").deleteOne({ _id: id as any });
+        }
+      } catch (err) {
+        console.warn("MongoDB delete error:", err);
+      }
+    }
+
+    // 2. Delete from local data/inquiries.json
+    const inqPath = path.join(process.cwd(), "data", "inquiries.json");
+    if (fs.existsSync(inqPath)) {
+      try {
+        const list: any[] = JSON.parse(fs.readFileSync(inqPath, "utf-8"));
+        const filtered = list.filter((item) => item._id !== id && item.id !== id);
+        fs.writeFileSync(inqPath, JSON.stringify(filtered, null, 2), "utf-8");
+      } catch (err) {
+        console.warn("Local inquiries delete error:", err);
+      }
+    }
+
+    return { success: true };
+  } catch (err: any) {
+    return { success: false, error: err.message };
+  }
 }

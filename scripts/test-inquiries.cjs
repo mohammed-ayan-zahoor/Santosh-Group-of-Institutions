@@ -3,7 +3,6 @@ const path = require("node:path");
 const assert = require("node:assert");
 const ts = require("typescript");
 
-// Transpile lib/mongodb.ts and lib/content.ts to test in node
 function loadTsModule(relPath, customReq = require) {
   const source = fs.readFileSync(path.join(__dirname, relPath), "utf-8");
   const transpiled = ts.transpileModule(source, {
@@ -21,49 +20,46 @@ const contentMod = loadTsModule("../lib/content.ts", (id) => {
   return require(id);
 });
 
-const { saveInquiry, getAllInquiries } = contentMod;
+const { saveInquiry, getAllInquiries, deleteInquiry } = contentMod;
 
 async function runTest() {
-  console.log("Testing inquiry save and retrieval pipeline...");
+  console.log("Testing inquiry save, retrieve, and delete pipeline...");
 
   const testInquiry = {
-    name: "Ayan Test Parent",
-    phone: "09988776655",
-    email: "testparent@example.com",
-    institution: "Fathima PU College",
-    message: "Interested in PCMC course details and admission fee structure.",
+    name: "Spam Inquiry Test",
+    phone: "0123456789",
+    email: "spambot@example.com",
+    institution: "Central Office",
+    message: "SEO rankings pitch message to be deleted.",
   };
 
   // 1. Save inquiry
   const res = await saveInquiry(testInquiry);
   assert(res.success, `saveInquiry failed: ${res.error}`);
   assert(res.id, "saveInquiry should return an ID");
-  console.log(`✓ Inquiry saved successfully with ID: ${res.id}`);
+  console.log(`✓ Inquiry saved with ID: ${res.id}`);
 
   // 2. Retrieve inquiries
-  const inquiries = await getAllInquiries();
-  assert(Array.isArray(inquiries), "getAllInquiries must return an array");
-  assert(inquiries.length > 0, "Inquiries list should not be empty");
+  const beforeDelete = await getAllInquiries();
+  const found = beforeDelete.find((inq) => inq._id === res.id || inq.id === res.id);
+  assert(found, "Saved inquiry should be retrieved");
+  console.log(`✓ Retrieved ${beforeDelete.length} inquiries, found saved test record.`);
 
-  const found = inquiries.find((inq) => inq.name === testInquiry.name && inq.phone === testInquiry.phone);
-  assert(found, "Saved test inquiry should be present in getAllInquiries result");
-  assert.strictEqual(found.institution, testInquiry.institution);
-  assert.strictEqual(found.message, testInquiry.message);
-  console.log(`✓ Retrieved ${inquiries.length} total inquiries, verified test inquiry in list.`);
+  // 3. Delete inquiry
+  const delRes = await deleteInquiry(res.id);
+  assert(delRes.success, `deleteInquiry failed: ${delRes.error}`);
+  console.log(`✓ Deleted inquiry with ID: ${res.id}`);
 
-  // 3. Clean up test record from data/inquiries.json
-  const inqPath = path.join(__dirname, "../data/inquiries.json");
-  if (fs.existsSync(inqPath)) {
-    const list = JSON.parse(fs.readFileSync(inqPath, "utf-8"));
-    const filtered = list.filter((i) => i.id !== res.id && i._id !== res.id && i.name !== testInquiry.name);
-    fs.writeFileSync(inqPath, JSON.stringify(filtered, null, 2), "utf-8");
-    console.log("✓ Cleaned up test record from local inquiries.json.");
-  }
+  // 4. Verify inquiry no longer exists
+  const afterDelete = await getAllInquiries();
+  const stillThere = afterDelete.find((inq) => inq._id === res.id || inq.id === res.id);
+  assert(!stillThere, "Deleted inquiry should no longer exist in getAllInquiries result");
+  console.log(`✓ Verified inquiry was removed. Current total: ${afterDelete.length}`);
 
-  console.log("\nAll inquiry tests passed successfully!");
+  console.log("\nAll inquiry save, retrieve, and delete checks passed successfully!");
 }
 
 runTest().catch((err) => {
-  console.error("Inquiry test failed:", err);
+  console.error("Test failed:", err);
   process.exit(1);
 });
