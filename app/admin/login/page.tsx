@@ -83,10 +83,6 @@ export default function AdminLoginPage() {
               </div>
             </div>
 
-            <div className="p-3 bg-tint/60 border border-taupe text-[11px] text-muted space-y-1">
-              <span className="font-semibold text-charcoal block">Default Password:</span>
-              <span><code className="bg-white px-1 py-0.5 border border-taupe">santosh1977</code> (configurable via ADMIN_PASSWORD env)</span>
-            </div>
 
             <button
               type="submit"
