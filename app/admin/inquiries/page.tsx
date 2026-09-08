@@ -9,7 +9,11 @@ import {
   Building,
   ArrowLeft,
   CheckCircle,
+  RotateCcw,
 } from "lucide-react";
+
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
 
 export default async function AdminInquiriesPage() {
   const inquiries = await getAllInquiries();
@@ -34,6 +38,16 @@ export default async function AdminInquiriesPage() {
               {inquiries.length} Total
             </span>
           </div>
+        </div>
+
+        <div className="flex items-center gap-3">
+          <Link
+            href="/admin/inquiries"
+            className="inline-flex items-center gap-1.5 text-xs text-forest hover:text-forest-dark border border-taupe px-3 py-1.5 bg-white rounded-[4px] transition-colors"
+          >
+            <RotateCcw className="w-3.5 h-3.5" />
+            <span>Refresh Inbox</span>
+          </Link>
         </div>
       </div>
 

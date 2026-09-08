@@ -119,7 +119,8 @@ export async function getAllInstitutions(): Promise<any[]> {
 }
 
 /**
- * Save an admission or general contact inquiry
+ * Save an admission or general contact inquiry.
+ * Writes to MongoDB if available AND ensures local backup in data/inquiries.json.
  */
 export async function saveInquiry(inquiry: {
   name: string;
@@ -134,53 +135,78 @@ export async function saveInquiry(inquiry: {
     status: "New",
   };
 
-  const db = await getDatabase();
-  if (db) {
-    try {
-      const res = await db.collection("inquiries").insertOne(record);
-      return { success: true, id: res.insertedId.toString() };
-    } catch (e: any) {
-      console.warn("MongoDB failed to insert inquiry, writing to local file:", e);
+  let savedId: string | null = null;
+
+  // 1. Try to save to MongoDB
+  try {
+    const db = await getDatabase();
+    if (db) {
+      const res = await db.collection("inquiries").insertOne({ ...record });
+      savedId = res.insertedId.toString();
     }
+  } catch (e: any) {
+    console.warn("MongoDB failed to insert inquiry, writing to local file fallback:", e);
   }
 
-  // Fallback to local data/inquiries.json
+  // 2. Always backup to local data/inquiries.json
   try {
     const inqPath = path.join(process.cwd(), "data", "inquiries.json");
     let list: any[] = [];
     if (fs.existsSync(inqPath)) {
-      list = JSON.parse(fs.readFileSync(inqPath, "utf-8"));
+      try {
+        list = JSON.parse(fs.readFileSync(inqPath, "utf-8"));
+      } catch {}
     }
-    const id = "inq_" + Date.now();
+    const id = savedId || "inq_" + Date.now();
     list.unshift({ ...record, _id: id });
     fs.writeFileSync(inqPath, JSON.stringify(list, null, 2), "utf-8");
     return { success: true, id };
   } catch (err: any) {
+    if (savedId) {
+      return { success: true, id: savedId };
+    }
+    console.error("Error saving inquiry locally:", err);
     return { success: false, error: err.message };
   }
 }
 
 /**
- * Get all submitted inquiries
+ * Get all submitted inquiries.
+ * Reads from MongoDB if available; falls back or merges with local data/inquiries.json.
  */
 export async function getAllInquiries(): Promise<any[]> {
-  const db = await getDatabase();
-  if (db) {
-    try {
+  const inquiriesMap = new Map<string, any>();
+
+  // 1. Check MongoDB first
+  try {
+    const db = await getDatabase();
+    if (db) {
       const list = await db.collection("inquiries").find({}).sort({ createdAt: -1 }).toArray();
-      return list.map((item) => ({ ...item, _id: item._id.toString() }));
-    } catch (e) {
-      console.warn("MongoDB failed reading inquiries, checking local fallback:", e);
+      for (const item of list) {
+        const id = item._id.toString();
+        inquiriesMap.set(id, { ...item, _id: id });
+      }
     }
+  } catch (e) {
+    console.warn("MongoDB failed reading inquiries, checking local fallback:", e);
   }
 
-  const inqPath = path.join(process.cwd(), "data", "inquiries.json");
-  if (fs.existsSync(inqPath)) {
-    try {
-      return JSON.parse(fs.readFileSync(inqPath, "utf-8"));
-    } catch (e) {
-      return [];
+  // 2. Also check local data/inquiries.json
+  try {
+    const inqPath = path.join(process.cwd(), "data", "inquiries.json");
+    if (fs.existsSync(inqPath)) {
+      const localList: any[] = JSON.parse(fs.readFileSync(inqPath, "utf-8"));
+      for (const item of localList) {
+        const id = item._id || item.id || `local_${item.createdAt}_${item.phone}`;
+        if (!inquiriesMap.has(id)) {
+          inquiriesMap.set(id, { ...item, _id: id });
+        }
+      }
     }
+  } catch (e) {
+    console.warn("Error reading local inquiries backup:", e);
   }
-  return [];
+
+  const all = Array.from(inquiriesMap.values());
+  return all.sort((a, b) => new Date(b.createdAt || 0).getTime() - new Date(a.createdAt || 0).getTime());
 }

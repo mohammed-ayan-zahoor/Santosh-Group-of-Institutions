@@ -18,6 +18,8 @@ services:
       - CLOUDINARY_UPLOAD_PRESET=${CLOUDINARY_UPLOAD_PRESET:-}
     depends_on:
       - mongo
+    volumes:
+      - ./data:/app/data
 
   mongo:
     image: mongo:7.0
