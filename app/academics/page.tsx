@@ -2,7 +2,17 @@ import React from "react";
 import Link from "next/link";
 import { getPageContent } from "@/lib/content";
 import DecorativePlusGrid from "@/components/DecorativePlusGrid";
+import { buildMetadata } from "@/lib/metadata";
 import { ArrowRight, Award } from "lucide-react";
+
+export async function generateMetadata() {
+  const content = await getPageContent("academics");
+  return buildMetadata({
+    title: content?.metaTitle ?? "Academic Programs | Santosh Group of Institutions",
+    description: content?.metaDescription ?? "BBM, BCA, B.Com, BA, D.Ed, PUC Science/Commerce/Arts, and school programs across 11 campuses in Bangarpet and Bangalore.",
+    canonical: "https://santoshdedcollege.com/academics",
+  });
+}
 
 export default async function AcademicsPage() {
   const content = await getPageContent("academics");

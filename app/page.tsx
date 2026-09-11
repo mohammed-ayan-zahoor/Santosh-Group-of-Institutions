@@ -4,6 +4,7 @@ import Link from "next/link";
 import { getPageContent, getAllInstitutions } from "@/lib/content";
 import CrossGrid from "@/components/CrossGrid";
 import HeroCarousel from "@/components/HeroCarousel";
+import { buildMetadata } from "@/lib/metadata";
 import {
   ArrowRight,
   ArrowUpRight,
@@ -14,6 +15,16 @@ import {
   MapPin,
   ChevronRight,
 } from "lucide-react";
+
+export async function generateMetadata() {
+  const content = await getPageContent("home");
+  return buildMetadata({
+    title: content?.metaTitle ?? "Santosh Group of Institutions | Est. 1977 | Bangarpet & Bangalore",
+    description: content?.metaDescription ?? "11 institutions from Pre-Primary to Graduation in Bangarpet & Bangalore.",
+    canonical: "https://santoshdedcollege.com",
+    ogImage: "/images/campus-main-entrance.jpg",
+  });
+}
 
 export default async function HomePage() {
   const content = await getPageContent("home");

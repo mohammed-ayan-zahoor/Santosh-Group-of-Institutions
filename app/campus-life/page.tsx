@@ -3,7 +3,17 @@ import Image from "next/image";
 import Link from "next/link";
 import { getPageContent } from "@/lib/content";
 import DecorativePlusGrid from "@/components/DecorativePlusGrid";
+import { buildMetadata } from "@/lib/metadata";
 import { ArrowRight } from "lucide-react";
+
+export async function generateMetadata() {
+  const content = await getPageContent("campus-life");
+  return buildMetadata({
+    title: content?.metaTitle ?? "Campus & Infrastructure | Santosh Group of Institutions",
+    description: content?.metaDescription ?? "Labs, library, hostel, bus fleet, and sports grounds across Santosh Group campuses in Bangarpet and Bangalore.",
+    canonical: "https://santoshdedcollege.com/campus-life",
+  });
+}
 
 export default async function CampusLifePage() {
   const content = await getPageContent("campus-life");

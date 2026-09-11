@@ -2,7 +2,19 @@ import React from "react";
 import Image from "next/image";
 import { getPageContent } from "@/lib/content";
 import CrossGrid from "@/components/CrossGrid";
+import JsonLd from "@/components/JsonLd";
+import { buildMetadata } from "@/lib/metadata";
 import { Quote, Sparkles } from "lucide-react";
+
+export async function generateMetadata() {
+  const content = await getPageContent("about");
+  return buildMetadata({
+    title: content?.metaTitle ?? "About Us | Santosh Group of Institutions",
+    description: content?.metaDescription ?? "Meet Chairman Dr. Al Haji Abdul Sattar and Secretary A. Adil Pasha. 47+ years of academic excellence in Bangarpet.",
+    canonical: "https://santoshdedcollege.com/about",
+    ogImage: "/images/chairman-abdul-sattar.jpg",
+  });
+}
 
 export default async function AboutPage() {
   const content = await getPageContent("about");
@@ -15,6 +27,26 @@ export default async function AboutPage() {
 
   return (
     <div className="space-y-24 lg:space-y-32 pb-24">
+      <JsonLd schema={{
+        "@context": "https://schema.org",
+        "@type": "Person",
+        name: "Dr. Al Haji Abdul Sattar",
+        honorificPrefix: "Dr.",
+        honorificSuffix: "M.A.",
+        jobTitle: "Chairman",
+        worksFor: { "@type": "EducationalOrganization", name: "Santosh Group of Institutions", url: "https://santoshdedcollege.com" },
+        image: "https://santoshdedcollege.com/images/chairman-abdul-sattar.jpg",
+        description: "Founder and Chairman of Santosh Group of Institutions, Bangarpet. Established in 1977 with a vision to empower communities through education.",
+      }} />
+      <JsonLd schema={{
+        "@context": "https://schema.org",
+        "@type": "Person",
+        name: "A. Adil Pasha",
+        honorificSuffix: "B.Sc., B.E.",
+        jobTitle: "Secretary",
+        worksFor: { "@type": "EducationalOrganization", name: "Santosh Group of Institutions", url: "https://santoshdedcollege.com" },
+        image: "https://santoshdedcollege.com/images/secretary-adil-pasha.jpg",
+      }} />
       {/* 1. HERO / INTRODUCTION (Unboxed) */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 sm:pt-14">
         <div className="border-b border-taupe pb-12">

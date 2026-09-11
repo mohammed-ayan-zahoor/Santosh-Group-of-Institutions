@@ -4,13 +4,31 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getPageContent, getAllInstitutions } from "@/lib/content";
 import CrossGrid from "@/components/CrossGrid";
+import JsonLd from "@/components/JsonLd";
+import { buildMetadata } from "@/lib/metadata";
 import { ArrowLeft, ArrowRight, ArrowUpRight } from "lucide-react";
+
+const BASE_URL = "https://santoshdedcollege.com";
 
 export async function generateStaticParams() {
   const institutions = await getAllInstitutions();
   return institutions.map((inst) => ({
     slug: inst.slug,
   }));
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const inst = await getPageContent(slug);
+  if (!inst) return {};
+  const title = inst.metaTitle ?? `${inst.name} | ${inst.location} Campus | Santosh Group`;
+  const description = inst.metaDescription ?? `${inst.name} in ${inst.location}. ${inst.tagline ?? ""} ${inst.description ?? ""}`.slice(0, 160).trim();
+  return buildMetadata({
+    title,
+    description,
+    canonical: `${BASE_URL}/institutions/${slug}`,
+    ogImage: inst.image ?? "/images/campus-main-entrance.jpg",
+  });
 }
 
 export default async function InstitutionDetailPage({
@@ -29,6 +47,32 @@ export default async function InstitutionDetailPage({
 
   return (
     <div className="space-y-20 lg:space-y-28 pb-24">
+      <JsonLd schema={{
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Home", item: BASE_URL },
+          { "@type": "ListItem", position: 2, name: "Institutions", item: `${BASE_URL}/institutions` },
+          { "@type": "ListItem", position: 3, name: inst.name, item: `${BASE_URL}/institutions/${slug}` },
+        ],
+      }} />
+      <JsonLd schema={{
+        "@context": "https://schema.org",
+        "@type": "EducationalOrganization",
+        name: inst.name,
+        description: inst.description,
+        url: `${BASE_URL}/institutions/${slug}`,
+        ...(inst.image && { image: inst.image.startsWith("http") ? inst.image : `${BASE_URL}${inst.image}` }),
+        parentOrganization: { "@type": "EducationalOrganization", name: "Santosh Group of Institutions", url: BASE_URL },
+        address: {
+          "@type": "PostalAddress",
+          addressLocality: inst.location,
+          addressRegion: "Karnataka",
+          addressCountry: "IN",
+        },
+        ...(inst.phone && { telephone: inst.phone }),
+        ...(inst.email && { email: inst.email }),
+      }} />
       {/* 1. HERO SECTION — Completely unboxed, floats directly on #FAF6EE */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 sm:pt-10">
         {/* Back Link */}

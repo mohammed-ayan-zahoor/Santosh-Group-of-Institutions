@@ -2,8 +2,17 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { getAllInstitutions } from "@/lib/content";
+import { buildMetadata } from "@/lib/metadata";
 import { ArrowRight } from "lucide-react";
 import CrossGrid from "@/components/CrossGrid";
+
+export function generateMetadata() {
+  return buildMetadata({
+    title: "Our 11 Institutions | Santosh Group Bangarpet & Bangalore",
+    description: "All 11 Santosh institutions — nursery, primary, high school, Fathima PU College, Santosh Degree College, and D.Ed College in Bangarpet and Bangalore.",
+    canonical: "https://santoshdedcollege.com/institutions",
+  });
+}
 
 export default async function InstitutionsDirectoryPage() {
   const allInstitutions = await getAllInstitutions();
