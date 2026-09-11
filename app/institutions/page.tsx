@@ -68,6 +68,7 @@ export default async function InstitutionsDirectoryPage() {
                   src={inst.image || "/images/hero-students.jpg"}
                   alt={inst.name}
                   fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
@@ -129,6 +130,7 @@ export default async function InstitutionsDirectoryPage() {
                   src={inst.image || "/images/classroom-students.jpg"}
                   alt={inst.name}
                   fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
                 />
               </div>

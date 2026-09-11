@@ -114,8 +114,9 @@ export default async function HomePage() {
             <div className="relative h-56 sm:h-64 border border-taupe overflow-hidden bg-charcoal/5">
               <Image
                 src="/images/students-walking.jpg"
-                alt="Students walking together on campus"
+                alt="Students walking together on campus at Santosh Group of Institutions"
                 fill
+                sizes="(max-width: 768px) 100vw, 33vw"
                 className="object-cover"
               />
             </div>
@@ -125,8 +126,9 @@ export default async function HomePage() {
           <div className="md:col-span-4 relative min-h-[420px] md:min-h-[500px] border border-taupe overflow-hidden bg-charcoal/5">
             <Image
               src="/images/student-portrait.jpg"
-              alt="Santosh student holding books"
+              alt="Santosh Group of Institutions student holding books — Bangarpet campus"
               fill
+              sizes="(max-width: 768px) 100vw, 33vw"
               className="object-cover object-top"
             />
           </div>
@@ -255,8 +257,9 @@ export default async function HomePage() {
             <div className="relative border border-taupe bg-charcoal/5 h-80 sm:h-[440px] mb-8">
               <Image
                 src="/images/students-group-study.jpg"
-                alt="Students collaborating at study table"
+                alt="Santosh Group students collaborating at study table"
                 fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover"
               />
               {/* Overlapping Navy Card matching reference */}
@@ -281,8 +284,9 @@ export default async function HomePage() {
         <div className="relative w-full h-64 sm:h-80 lg:h-96 border border-taupe overflow-hidden group">
           <Image
             src="/images/students-laptop.jpg"
-            alt="Students working on technical projects"
+            alt="Santosh Group students working on computers — technology and digital learning"
             fill
+            sizes="100vw"
             className="object-cover object-center"
           />
           {/* Centered Circular Play Button matching EdmunHigh reference */}
@@ -322,6 +326,7 @@ export default async function HomePage() {
                   src={inst.image || "/images/campus-building-fathima.jpg"}
                   alt={inst.name}
                   fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
@@ -380,6 +385,7 @@ export default async function HomePage() {
                     src={item.image}
                     alt={item.title}
                     fill
+                    sizes="(max-width: 640px) 100vw, 176px"
                     className="object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>

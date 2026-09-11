@@ -131,6 +131,7 @@ export default async function InstitutionDetailPage({
             src={inst.image || "/images/hero-students.jpg"}
             alt={inst.name}
             fill
+            sizes="100vw"
             className="object-cover object-center"
             priority
           />

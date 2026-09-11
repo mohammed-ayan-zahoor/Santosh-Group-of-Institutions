@@ -14,7 +14,18 @@ export const metadata: Metadata = {
   },
   description:
     "11 institutions from Pre-Primary to Graduation in Bangarpet & Bangalore. Founded by Dr. Al Haji Abdul Sattar. Affiliated to Bangalore University, Karnataka State PU Board & NCTE.",
-  robots: { index: true, follow: true },
+  robots: {
+    index: true,
+    follow: true,
+    // ponytail: opt-in hints for Google Image Search and full snippet rendering.
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
   openGraph: {
     siteName: "Santosh Group of Institutions",
     type: "website",

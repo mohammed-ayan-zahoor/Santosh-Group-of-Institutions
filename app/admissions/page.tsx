@@ -359,6 +359,56 @@ export default function AdmissionsPage() {
           </table>
         </div>
       </section>
+
+      {/* 5. FREQUENTLY ASKED QUESTIONS — Matches FAQPage schema in layout.tsx */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="border-b border-taupe pb-4 mb-8">
+          <div className="text-[11px] font-sans uppercase tracking-[0.14em] text-muted">
+            QUICK ANSWERS
+          </div>
+          <h2 className="text-3xl font-serif text-charcoal">
+            Frequently Asked Questions
+          </h2>
+        </div>
+
+        <div className="divide-y divide-taupe border-y border-taupe">
+          {([
+            {
+              q: "What programs does Santosh Group of Institutions offer?",
+              a: "Santosh Group offers programs from Nursery to Graduation: Nursery & Primary School, Higher Primary School, High School (SSLC), Pre-University (PUC) in Science, Commerce, and Arts at Fathima PU College, Undergraduate degrees (BBM, BCA, B.Com, BA) at Santosh Degree College, and D.Ed (Teacher Training) at Santosh D.Ed College.",
+            },
+            {
+              q: "How do I apply for admission to Santosh Group of Institutions?",
+              a: "Contact the Admissions Office at No. 1169, Kolar Road, Bangarpet 563114. Call 09448106902 or email santoshgroupofinstitutions@gmail.com. Admissions are open annually for all programs.",
+            },
+            {
+              q: "Is Santosh Degree College affiliated to Bangalore University?",
+              a: "Yes. Santosh Degree College is affiliated to Bangalore University and offers BBM, BCA, B.Com, and BA programs.",
+            },
+            {
+              q: "Is Fathima PU College affiliated to the Karnataka State PU Board?",
+              a: "Yes. Fathima PU College, Bangarpet is affiliated to the Karnataka State Pre-University Board and offers Science, Commerce, and Arts streams.",
+            },
+            {
+              q: "Is Santosh D.Ed College approved by NCTE?",
+              a: "Yes. Santosh D.Ed (T.C.H) College is approved by NCTE (National Council for Teacher Education) and offers a 2-year Diploma in Education program.",
+            },
+            {
+              q: "Where is Santosh Group of Institutions located?",
+              a: "The central office is at No. 1169, Kolar Road, Bangarpet – 563 114, Kolar District, Karnataka. Santosh Group has 11 campuses spread across Bangarpet and Bangalore.",
+            },
+          ] as { q: string; a: string }[]).map((item, idx) => (
+            <div key={idx} className="py-6 grid grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-8">
+              <h3 className="lg:col-span-5 font-serif text-lg text-charcoal font-medium">
+                {item.q}
+              </h3>
+              <p className="lg:col-span-7 text-sm text-muted leading-relaxed font-sans">
+                {item.a}
+              </p>
+            </div>
+          ))}
+        </div>
+      </section>
     </div>
   );
 }
