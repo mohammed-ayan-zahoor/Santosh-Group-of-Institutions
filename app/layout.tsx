@@ -78,7 +78,10 @@ const orgSchema = {
   },
   telephone: ["+919448106902", "+919886152151"],
   email: "santoshgroupofinstitutions@gmail.com",
-  numberOfStudents: "5000+",
+  numberOfEmployees: {
+    "@type": "QuantitativeValue",
+    "value": "300+"
+  },
   hasOfferCatalog: {
     "@type": "OfferCatalog",
     name: "Academic Programs — Pre-Primary to Graduation",
